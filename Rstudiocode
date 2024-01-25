@@ -1,0 +1,58 @@
+Share.of.Students.from.Abroad <- read.csv("~/Downloads/Kaggle/archive/Share of Students from Abroad.csv")
+View(Share.of.Students.from.Abroad)
+install.packages('tidyverse', 'googlesheets4')
+install.packages('tidyverse')
+library(tidyverse)
+sosa <- Share.of.Students.from.Abroad
+view(sosa)
+head(sosa)
+sosa2 <- subset(sosa, select = Region.or.Country Code, Year, Inbound.mobility.rate..both.sexes)
+sosa2 <- subset(sosa, select = 'Region.or.Country Code', 'Year', 'Inbound.mobility.rate..both.sexes')
+sosa2 <- sosa %>% select('Region.or.Country Code', 'Year', 'Inbound.mobility.rate..both.sexes')
+View(sosa)
+colnames(sosa)
+sosa2 <- sosa %>% select('Region.or.Country', 'Code', 'Year', 'Inbound.mobility.rate..both.sexes')
+sosa2 <- sosa %>% select(Region.or.Country, Code, Year, Inbound.mobility.rate..both.sexes)
+sosa2 <- sosa %>% subset(Region.or.Country, Code, Year, Inbound.mobility.rate..both.sexes)
+table(sosa$Region.or.Country)
+sort(table(sosa$Region.or.Country), decreasing = TRUE)
+sort(table(sosa$Region.or.Country), decreasing = FALSE)
+sosa 1 <- sosa %>%
+sosa1 <- sosa %>%
+group_by(Region.or.Country) %>%
+filter(any(value > 10))
+sosa1 <- sosa %>%
+group_by(Region.or.Country) %>%
+filter(any( Region.or.Country> 10))
+sosa1 <- sosa %>%
+group_by(Region.or.Country) %>%
+filter(any( Region.or.Country> 10))
+View(sosa1)
+View(sosa1)
+sosa %>%
+group_by(Region.or.Country) %>%
+filter(any( Region.or.Country> 10))
+sort(table(sosa$Region.or.Country), decreasing = FALSE)
+install.packages('tidyverse')
+library(tidyverse)
+sosa <- read.csv('/Users/amarewoods/Downloads/Kaggle/archive/Share of Students Studying Abroad.csv')
+view(sosa)
+head(sosa)
+dtype(year)
+class(year)
+class(sosa)
+class(sosa$Year)
+Sosa1 <- select sosa %>% ('Year' >= '2015')
+Sosa1 <- select sosa %>% ([,3:5]>2016)
+Sosa1 <- select (sosa[,3:5]>2016)
+Sosa1 <- select (sosa,'Year', <2016)
+Sosa1 <- select (sosa,Year <2016)
+Sosa1 <- select (sosa,Year <'2016')
+Sosa1 <- drop_na(sosa, code)
+Sosa1 <- drop_na(sosa, Code)
+view(sosa1)
+duplicated(Region.of.Country)
+duplicated('Region.of.Country')
+duplicated('Code')
+duplicated(Sosa1$Region.of.Country)
+sum(duplicated(Sosa1$Region.of.Country))
